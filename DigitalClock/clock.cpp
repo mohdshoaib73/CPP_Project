@@ -1,7 +1,7 @@
 #include<iostream>//header file for input output stream
-#include<ctime>//header file for date and time
-#include<chrono>//header file for chrono library, used for time manipulation and formatting
-#include<iomanip>//header file for input output manipulation, used for formatting output
+#include<ctime>//header file for date and time for eg localtime
+#include<chrono>//header file for chrono library, used for time manipulation and formatting for eg system_clock
+#include<iomanip>//header file for input output manipulation, used for formatting output for eg put_time
 #include <windows.h> //header file for windows specific functions like Sleep()
 
 using namespace std;//using standard namespace
@@ -29,7 +29,7 @@ int main()
         //put_time is a manipulator that formats the time according to the specified format string
         //%I is for hour in 12-hour format, %M is for minute, %S is for second, %p is for AM/PM
 
-        
+
        //introduce a delay of 1 second before updating the time again
         Sleep(1000); // Sleep for 1000 milliseconds (1 second)
         //this_thread::sleep_for is a function that makes the current thread sleep for the specified duration for eg 1 second here
